@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#C6A15B"/>
+      <stop offset="100%" stop-color="#AA8237"/>
+    </linearGradient>
+    <linearGradient id="rose-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DEE3"/>
+      <stop offset="100%" stop-color="#B8546E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Soft background circle -->
+  <circle cx="50" cy="50" r="46" fill="#FFF9F4" stroke="url(#gold-grad)" stroke-width="2" />
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#F6DEE3" stroke-width="1.5" stroke-dasharray="3 3" />
+
+  <!-- Floral vine accents -->
+  <path d="M 22 50 C 20 30, 35 20, 50 20 C 65 20, 80 30, 78 50" fill="none" stroke="#7C8F6F" stroke-width="1.5" stroke-linecap="round" />
+  
+  <!-- Small Petals -->
+  <circle cx="28" cy="28" r="4" fill="#B8546E" opacity="0.8" />
+  <circle cx="24" cy="34" r="3" fill="#F8C8D4" />
+  <path d="M 28 28 Q 20 22 24 18 Q 30 22 28 28 Z" fill="#7C8F6F" opacity="0.7" />
+
+  <circle cx="72" cy="28" r="4" fill="#B8546E" opacity="0.8" />
+  <circle cx="76" cy="34" r="3" fill="#F8C8D4" />
+  <path d="M 72 28 Q 80 22 76 18 Q 70 22 72 28 Z" fill="#7C8F6F" opacity="0.7" />
+
+  <!-- Elegant Monogram text "J" -->
+  <text x="50" y="62" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-style="italic" font-weight="700" fill="#8C3B54" text-anchor="middle">J</text>
+
+  <!-- Small flower at bottom -->
+  <g transform="translate(50, 80) scale(0.7)">
+    <path d="M 0 -8 C 4 -12 8 -4 0 0 C -8 -4 -4 -12 0 -8 Z" fill="#B8546E" />
+    <path d="M 8 0 C 12 4 4 8 0 0 C 4 -8 12 -4 8 0 Z" fill="#F6DEE3" />
+    <path d="M 0 8 C -4 12 -8 4 0 0 C 8 4 4 12 0 8 Z" fill="#B8546E" />
+    <path d="M -8 0 C -12 -4 -4 -8 0 0 C -4 8 -12 4 -8 0 Z" fill="#F6DEE3" />
+    <circle cx="0" cy="0" r="3" fill="#C6A15B" />
+  </g>
+</svg>
