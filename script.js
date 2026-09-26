@@ -1,6 +1,6 @@
 /**
  * Jardin d'Amour - E-Commerce Vitrine
- * Common JavaScript Script (Version Féminine & Romantic)
+ * Common JavaScript Script (100% Responsive & Seamless UX)
  */
 
 const PRODUCTS = [
@@ -381,6 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Hamburger Menu Controller
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
   if (navToggle && navMenu) {
@@ -389,8 +390,17 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.setAttribute('aria-expanded', !isExpanded);
       navMenu.classList.toggle('active');
     });
+
+    const navLinks = navMenu.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 
+  // Cart Drawer Controller
   const cartBtn = document.getElementById('cart-btn-trigger');
   const cartCloseBtn = document.getElementById('cart-drawer-close');
   const cartOverlay = document.getElementById('cart-overlay');
